@@ -1,0 +1,83 @@
+.card{
+    position:center center;
+    width:25.5625rem;
+    height:27.5rem;
+    border-radius:0.75rem;
+    background-color:white;
+    background-image:url("/images/bg-pattern-card.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    &__profile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top:5.875rem;
+        >img{
+            border-radius:50%;
+            border: 5px solid white;
+            height:auto;
+            width: 30%;
+        }
+    }
+
+    &__text{
+        position:relative;
+        text-align:center;
+        height: auto;
+        >h4{
+            margin:0;
+            font-size:$font-lg;
+            font-weight: 700;
+            &.h4__inline{
+                display:inline-block;
+            }
+        }
+        >p{
+            color:$darkGray;
+            margin:0;
+            font-size:$font-med;
+            font-weight: 400;
+            &.p__inline{
+                margin:0px;
+                display: inline-block;
+                font-size:$font-lg;
+                padding-left:5px;
+            }
+        }
+        >span{
+            margin-bottom: 2.1875rem;
+            &.line{
+                height:0.0625rem;
+                width: 100%;
+                background-color:$darkGray;
+                float:left;
+            }
+        }
+    }
+
+    &__stats{
+        display: flex;
+        flex-flow: row nowrap;
+        width:calc(100%-10rem);
+        padding-left: 5rem;
+        padding-right: 5rem;
+        justify-content: space-between;
+
+        .card__item{
+            >h4{
+                font-size:$font-lg;
+                margin:0;
+                font-weight: 700;
+            }
+            >p{
+                color:$darkGrayishBlue;
+                margin:0;
+                font-size:$font-sm;
+                padding-top:0.3125rem;
+                font-weight:400;
+                
+            }
+        }
+    }
+}

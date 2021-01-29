@@ -1,0 +1,32 @@
+body{
+    background-color:$darkCyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+    background-repeat:no-repeat, no-repeat;
+    background-position: right 50vw bottom 28vh, left 51vw top 50vh;
+    background-size: 100%, 70%;
+    box-sizing:border-box;
+    font-family:'Kumbh Sans', sans-serif;
+}
+
+.attribution{
+    position:absolute;
+    bottom: 0;
+    font-size:$font-xsm;
+}
+
+.pb35{
+    padding-bottom: 2.1875rem;
+}
+
+.pt25{
+    padding-top: 1.5625rem;
+}
+
+.pb15{
+    padding-bottom:0.9375rem;
+}
+
